@@ -1,0 +1,23 @@
+USE [online_class]
+GO
+
+/****** Object:  Table [dbo].[Registration]    Script Date: 24-01-2025 4:51:07 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Registration](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[name] [nvarchar](max) NULL,
+	[email] [nvarchar](max) NULL,
+	[mobile] [nvarchar](50) NULL,
+	[password] [nvarchar](50) NULL,
+ CONSTRAINT [PK_Registration] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
